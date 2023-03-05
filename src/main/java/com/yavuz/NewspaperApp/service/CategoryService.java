@@ -16,6 +16,10 @@ public class CategoryService extends ServiceManager<Category,Long> {
         this.repository = repository;
     }
 
+    public Category save(String name) {
+        return save(Category.builder().name(name).build());
+    }
+
     public Optional<Category> findByName(String name){
         return repository.findByName(name);
     }
