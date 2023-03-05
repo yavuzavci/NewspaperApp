@@ -24,8 +24,12 @@ public class Comment {
     private Status status = Status.ACTIVE;
     @Builder.Default
     private final LocalDateTime date = LocalDateTime.now();
+    /*
+        included for possible future use,
+        will be used to check if a comment is edited.
+     */
     @Builder.Default
     private LocalDateTime lastUpdateDate = LocalDateTime.now();
     @Builder.Default
-    private Double score = 0D;
+    private Double score = 0D; // included for possible future use
 }

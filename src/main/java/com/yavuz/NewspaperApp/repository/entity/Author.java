@@ -29,7 +29,7 @@ public class Author {
     @Enumerated(EnumType.STRING)
     private Gender gender;
     @Builder.Default
-    private final LocalDateTime registerDate = LocalDateTime.now();
+    private LocalDateTime registerDate = LocalDateTime.now();
     @ElementCollection
     private List<Long> newsIds;
     @ElementCollection

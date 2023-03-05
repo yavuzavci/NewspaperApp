@@ -28,10 +28,10 @@ public class News {
     @Builder.Default
     private Status status = Status.ACTIVE;
     @Builder.Default
-    private final LocalDateTime publishDate = LocalDateTime.now();
+    private LocalDateTime publishDate = LocalDateTime.now();
     @Builder.Default
     private LocalDateTime lastUpdateDate = LocalDateTime.now();
     @Builder.Default
-    private Double score = 0D;
+    private Double score = 0D; // included for possible future use
 
 }
